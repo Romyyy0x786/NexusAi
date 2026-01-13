@@ -44,4 +44,13 @@ graph TD
 
     style E fill:#f96,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
+The system operates on a cyclical logic gate to ensure high-fidelity outputs:
+
+Planner: Deconstructs the prompt into actionable sub-tasks.
+
+Executor: Specialized agents process the sub-tasks in parallel.
+
+Critic: Reviews the aggregated result against the original goal.
+
+Refinement: If the Critic identifies gaps, the system loops back to the Planner for a second pass.
 
