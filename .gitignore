@@ -1,0 +1,23 @@
+# --- NEXUS-AI Security ---
+.env
+api_keys.json
+
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# --- Streamlit Temporary Files ---
+.streamlit/
+static/
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
