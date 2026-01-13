@@ -73,7 +73,8 @@ graph TD
 
 ---
 
-##📂 Project Structure
+## 📂Project Structure
+
 NEXUS-AI/
 ├── .env                 # Secret API Keys (Groq, etc.)
 ├── .gitignore           # Files to exclude from GitHub
