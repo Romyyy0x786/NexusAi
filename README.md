@@ -27,16 +27,19 @@ NEXUS-AI is a high-performance **Multi-Agent Orchestration System** designed to 
 4. **Run:** `python -m streamlit run interface.py`
 
 
-   graph TD
+ graph TD
     A[User Problem] --> B[Planner Agent]
-    B -- Strategic Plan --> C[Reasoning Agent]
-    C -- Proposed Solution --> D[Critic Agent]
+    B -- "Strategic Plan" --> C[Reasoning Agent]
+    C -- "Proposed Solution" --> D[Critic Agent]
     
     D -- "If Flaws Found (Red Path)" --> E[Self-Correction Loop]
-    E -- Feedback/Refinement --> C
+    E -- "Feedback/Refinement" --> C
     
     D -- "If Approved (Green Path)" --> F[Final Validated Output]
     F --> G[Explainability Layer]
-    G -- Decision Trace --> A
+    G -- "Decision Trace" --> A
+
+    style E fill:#f96,stroke:#333,stroke-width:2px
+    style D fill:#bbf,stroke:#333,stroke-width:2px
 
 
