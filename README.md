@@ -4,52 +4,57 @@
 [![Groq LPU](https://img.shields.io/badge/Inference-Groq_LPU-orange.svg)](https://groq.com/)
 [![Framework](https://img.shields.io/badge/Framework-LangChain-green.svg)](https://python.langchain.com/)
 
-NEXUS-AI is a high-performance **Multi-Agent Orchestration System** designed to solve complex, multi-step problems through decentralized reasoning. Unlike standard LLM chats, NEXUS-AI simulates a professional team environment where specialized agents collaborate, audit, and refine outputs autonomously.
+NEXUS-AI is a high-performance **Multi-Agent Orchestration System** designed to solve complex, multi-step problems through decentralized reasoning.
 
-## 🚀 Key Features
-- **Collaborative Multi-Agent Flow:** Includes specialized agents for Planning, Reasoning, and Quality Control.
-- **Autonomous Self-Correction:** A Critic agent audits the solution and triggers a re-planning loop if flaws are detected.
-- **Explainable AI (XAI):** A "Deep Explain" feature that traces the neural decision path for the user.
-- **Ultra-Low Latency:** Optimized for Groq's LPU (Language Processing Unit) for near-instant agent communication.
-
---- 
-
-## 🛠️ Technology Stack
-- **Core Engine:** Llama 3.3 70B (State-of-the-art Reasoning Model)
-- **Agent Framework:** LangChain (Prompt Engineering & Chaining)
-- **UI/UX:** Streamlit with Custom CSS (Futuristic Dark Theme)
-- **API Provider:** Groq Cloud (LPU Hardware Acceleration)
-
+Unlike standard LLM chat systems, NEXUS-AI simulates a **professional team environment** where specialized AI agents collaborate, audit, and autonomously refine solutions.
 
 ---
 
-### 📊 System Workflow
+## 🚀 Key Features
+
+- **Collaborative Multi-Agent Flow**  
+  Planner, Reasoning, and Critic agents work together autonomously.
+
+- **Autonomous Self-Correction**  
+  A Critic agent audits outputs and triggers replanning if flaws are detected.
+
+- **Explainable AI (XAI)**  
+  Transparent decision tracing through an Explainability Layer.
+
+- **Ultra-Low Latency**  
+  Optimized for **Groq LPU hardware** enabling near-instant inference.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Core Model:** Llama 3.3 70B  
+- **Agent Framework:** LangChain  
+- **Frontend:** Streamlit + Custom CSS  
+- **API Provider:** Groq Cloud (LPU Acceleration)  
+- **Language:** Python 3.10+
+
+---
+
+## 📊 System Workflow
 
 ```mermaid
 graph TD
     A[User Problem] --> B[Planner Agent]
-    B -- "Strategic Plan" --> C[Reasoning Agent]
-    C -- "Proposed Solution" --> D[Critic Agent]
-    
-    D -- "If Flaws Found (Red Path)" --> E[Self-Correction Loop]
-    E -- "Feedback/Refinement" --> C
-    
-    D -- "If Approved (Green Path)" --> F[Final Validated Output]
+    B -->|Strategic Plan| C[Reasoning Agent]
+    C -->|Proposed Solution| D[Critic Agent]
+
+    D -->|Flaws Found| E[Self-Correction Loop]
+    E -->|Refinement Feedback| C
+
+    D -->|Approved| F[Final Validated Output]
     F --> G[Explainability Layer]
-    G -- "Decision Trace" --> A
-
-    style E fill:#f96,stroke:#333,stroke-width:2px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-
+    G -->|Decision Trace| A
 
 
 ---
 
+## Setup & Installation
 
-### 📦 Setup & Installation
-1. **Clone Repo:** `git clone https://github.com/YOUR_USERNAME/NEXUS-AI.git`
-2. **Install:** `pip install -r requirements.txt`
-3. **API Key:** Create a `.env` file and add `GROQ_API_KEY=your_key_here`
-4. **Run:** `python -m streamlit run interface.py`
-
-
+    style E fill:#f96,stroke:#333,stroke-width:2px
+    style D fill:#bbf,stroke:#333,stroke-width:2px
