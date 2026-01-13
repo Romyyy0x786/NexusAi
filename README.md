@@ -53,7 +53,36 @@ graph TD
 
     style E fill:#f96,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
+```
 
 ---
 
 ## Setup & Installation
+1. Clone the Repository
+   git clone https://github.com/Romyyy0x786/NEXUS-AI.git
+   cd NEXUS-AI
+
+2.Install Dependencies:
+   pip install -r requirements.txt
+
+3.GROQ_API_KEY=your_key_here
+
+4.Launch the Interface:
+  python -m streamlit run interface.py
+
+
+---
+
+##📂 Project Structure
+NEXUS-AI/
+├── .env                # Secret API Keys (Groq, etc.)
+├── .gitignore          # Files to exclude from GitHub (like .env)
+├── README.md           # Project Documentation
+├── requirements.txt    # List of Python dependencies
+├── interface.py        # Streamlit Frontend (The Dark Theme UI)
+├── main.py             # Agent Logic and Orchestration Engine
+└── core/               # (Optional) Core logic folder
+    ├── agents.py       # Detailed Agent prompts & personas
+    └── utils.py        # Helper functions for Deep Explain & XAI
+
+  
