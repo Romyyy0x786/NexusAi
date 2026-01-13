@@ -12,7 +12,7 @@ NEXUS-AI is a high-performance **Multi-Agent Orchestration System** designed to 
 - **Explainable AI (XAI):** A "Deep Explain" feature that traces the neural decision path for the user.
 - **Ultra-Low Latency:** Optimized for Groq's LPU (Language Processing Unit) for near-instant agent communication.
 
- 
+--- 
 
 ## 🛠️ Technology Stack
 - **Core Engine:** Llama 3.3 70B (State-of-the-art Reasoning Model)
@@ -20,12 +20,8 @@ NEXUS-AI is a high-performance **Multi-Agent Orchestration System** designed to 
 - **UI/UX:** Streamlit with Custom CSS (Futuristic Dark Theme)
 - **API Provider:** Groq Cloud (LPU Hardware Acceleration)
 
-## 📦 Setup & Installation
-1. **Clone Repo:** `git clone https://github.com/YOUR_USERNAME/NEXUS-AI.git`
-2. **Install:** `pip install -r requirements.txt`
-3. **API Key:** Create a `.env` file and add `GROQ_API_KEY=your_key_here`
-4. **Run:** `python -m streamlit run interface.py`
 
+---
 
 ### 📊 System Workflow
 
@@ -44,13 +40,13 @@ graph TD
 
     style E fill:#f96,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
-The system operates on a cyclical logic gate to ensure high-fidelity outputs:
+---
 
-Planner: Deconstructs the prompt into actionable sub-tasks.
 
-Executor: Specialized agents process the sub-tasks in parallel.
+### 📦 Setup & Installation
+1. **Clone Repo:** `git clone https://github.com/YOUR_USERNAME/NEXUS-AI.git`
+2. **Install:** `pip install -r requirements.txt`
+3. **API Key:** Create a `.env` file and add `GROQ_API_KEY=your_key_here`
+4. **Run:** `python -m streamlit run interface.py`
 
-Critic: Reviews the aggregated result against the original goal.
-
-Refinement: If the Critic identifies gaps, the system loops back to the Planner for a second pass.
 
