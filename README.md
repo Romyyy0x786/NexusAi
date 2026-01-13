@@ -75,14 +75,15 @@ graph TD
 
 ##📂 Project Structure
 NEXUS-AI/
-├── .env                # Secret API Keys (Groq, etc.)
-├── .gitignore          # Files to exclude from GitHub (like .env)
-├── README.md           # Project Documentation
-├── requirements.txt    # List of Python dependencies
-├── interface.py        # Streamlit Frontend (The Dark Theme UI)
-├── main.py             # Agent Logic and Orchestration Engine
-└── core/               # (Optional) Core logic folder
-    ├── agents.py       # Detailed Agent prompts & personas
-    └── utils.py        # Helper functions for Deep Explain & XAI
+├── .env                 # Secret API Keys (Groq, etc.)
+├── .gitignore           # Files to exclude from GitHub
+├── README.md            # Project Documentation
+├── requirements.txt     # Python dependencies
+├── interface.py         # Streamlit Frontend (Dark Theme UI)
+├── main.py              # Agent Logic & Orchestration Engine
+└── core/
+    ├── agents.py        # Agent prompts & personas
+    └── utils.py         # Helper functions for XAI & Deep Explain
+
 
   
